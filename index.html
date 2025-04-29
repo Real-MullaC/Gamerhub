@@ -8,27 +8,31 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <!-- Added mobile menu button -->
+  <div class="mobile-menu-btn" id="mobileMenuBtn">
+    <i class="fas fa-bars"></i>
+  </div>
+
   <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <i class="fas fa-gamepad logo-icon"></i>
-                <span>Gamers Hub</span>
-            </a>
-            <div class="nav-links">
-                <a href="index.html" class="active">Home</a>
-                <a href="services.html">Services</a>
-                <a href="creators.html">For Creators</a>
-                <a href="contact.html" class="btn btn-primary">Join Now</a>
-                <label class="theme-switch">
-                    <input type="checkbox" id="theme-toggle">
-                    <span class="slider"></span>
-                </label>
-            </div>
-        </div>
-    </nav>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-gamepad logo-icon"></i>
+        <span>Gamers Hub</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="creators.html">For Creators</a>
+        <a href="contact.html" class="btn btn-primary">Join Now</a>
+        <label class="theme-switch">
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+  </nav>
 
-
-  <!-- Hero Section -->
+  <!-- Original hero section remains unchanged -->
   <section class="hero">
     <div class="container">
       <h1>Amplify Your Gaming Influence</h1>
@@ -53,7 +57,7 @@
     </div>
   </section>
 
-  <!-- Features -->
+  <!-- Original features section remains unchanged -->
   <section class="container">
     <h2 class="text-center">Why Choose Us</h2>
     <p class="text-center">Specialized support for gaming creators</p>
@@ -79,7 +83,7 @@
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Original footer remains unchanged -->
   <div id="footer-container"></div>
 
 <script>
