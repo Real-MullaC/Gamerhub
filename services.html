@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | Gamers Hub Network</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-gamepad logo-icon"></i>
+                <span>Gamers Hub</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="creators.html">For Creators</a>
+                <a href="contact.html" class="btn btn-primary">Join Now</a>
+                <label class="theme-switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+
+  <section class="hero">
+    <div class="container">
+      <h1>Our Services</h1>
+      <p>Comprehensive solutions tailored for gaming content creators</p>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="grid grid-3">
+      <div class="card">
+        <i class="fas fa-users feature-icon"></i>
+        <h3>Audience Growth</h3>
+        <p>Strategic content planning and optimization to grow your follower base</p>
+        <ul class="mt-2">
+          <li>Algorithm analysis</li>
+          <li>Content scheduling</li>
+          <li>Engagement strategies</li>
+        </ul>
+      </div>
+      
+      <div class="card">
+        <i class="fas fa-video feature-icon"></i>
+        <h3>Content Creation</h3>
+        <p>Professional editing and production services</p>
+        <ul class="mt-2">
+          <li>Clip editing</li>
+          <li>Thumbnail design</li>
+          <li>Trend implementation</li>
+        </ul>
+      </div>
+      
+      <div class="card">
+        <i class="fas fa-ad feature-icon"></i>
+        <h3>Monetization</h3>
+        <p>Maximize your earning potential</p>
+        <ul class="mt-2">
+          <li>Brand partnerships</li>
+          <li>Sponsorship deals</li>
+          <li>Affiliate programs</li>
+        </ul>
+      </div>
+      
+      <div class="card">
+        <i class="fas fa-chart-pie feature-icon"></i>
+        <h3>Analytics</h3>
+        <p>Data-driven performance insights</p>
+        <ul class="mt-2">
+          <li>Performance tracking</li>
+          <li>Content analysis</li>
+          <li>Growth forecasting</li>
+        </ul>
+      </div>
+      
+      <div class="card">
+        <i class="fas fa-stream feature-icon"></i>
+        <h3>Live Streaming</h3>
+        <p>Optimize your live content</p>
+        <ul class="mt-2">
+          <li>Stream setup</li>
+          <li>Audience engagement</li>
+          <li>Monetization</li>
+        </ul>
+      </div>
+      
+      <div class="card">
+        <i class="fas fa-graduation-cap feature-icon"></i>
+        <h3>Creator Education</h3>
+        <p>Learn from industry experts</p>
+        <ul class="mt-2">
+          <li>Workshops</li>
+          <li>1-on-1 coaching</li>
+          <li>Resource library</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="text-center mt-3">
+      <a href="contact.html" class="btn btn-primary">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    })
+    .catch(() => {
+      document.getElementById('footer-container').innerHTML = `
+        <footer class="footer">
+          <div class="container">
+            <p>© ${new Date().getFullYear()} Gamers Hub Network</p>
+          </div>
+        </footer>
+      `;
+    });
+</script>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>

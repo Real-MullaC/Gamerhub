@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gamers Hub Network | Influencer Agency</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-gamepad logo-icon"></i>
+                <span>Gamers Hub</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="services.html">Services</a>
+                <a href="creators.html">For Creators</a>
+                <a href="contact.html" class="btn btn-primary">Join Now</a>
+                <label class="theme-switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Amplify Your Gaming Influence</h1>
+      <p>We help gaming creators grow their audience across TikTok, Instagram and YouTube with data-driven strategies.</p>
+      
+      <div class="platforms">
+        <div class="platform">
+          <i class="fab fa-tiktok"></i>
+        </div>
+        <div class="platform">
+          <i class="fab fa-instagram"></i>
+        </div>
+        <div class="platform">
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="contact.html" class="btn btn-primary">Get Started</a>
+        <a href="services.html" class="btn btn-outline">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="container">
+    <h2 class="text-center">Why Choose Us</h2>
+    <p class="text-center">Specialized support for gaming creators</p>
+    
+    <div class="grid grid-3">
+      <div class="card">
+        <i class="fas fa-chart-line feature-icon"></i>
+        <h3>Growth Strategies</h3>
+        <p>Data-driven approaches tailored for gaming content</p>
+      </div>
+      
+      <div class="card">
+        <i class="fas fa-video feature-icon"></i>
+        <h3>Content Optimization</h3>
+        <p>Make your gaming clips stand out from the crowd</p>
+      </div>
+      
+      <div class="card">
+        <i class="fas fa-handshake feature-icon"></i>
+        <h3>Brand Partnerships</h3>
+        <p>Connect with gaming brands and sponsors</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    })
+    .catch(() => {
+      document.getElementById('footer-container').innerHTML = `
+        <footer class="footer">
+          <div class="container">
+            <p>© ${new Date().getFullYear()} Gamers Hub Network</p>
+          </div>
+        </footer>
+      `;
+    });
+</script>
+
+  <script src="/js/theme.js"></script>
+</body>
+</html>
