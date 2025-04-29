@@ -595,3 +595,8 @@ a, button, .btn {
   min-height: 44px;
   min-width: 44px;
 }
+
+/* Mobile Menu Button - Hidden by default */
+.mobile-menu-btn {
+  display: none;
+}

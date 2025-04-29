@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,13 @@
     <link rel="stylesheet" href="css/policies.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
+    <!-- Added mobile menu button -->
+    <div class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fas fa-bars"></i>
+    </div>
+
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo">
@@ -32,7 +39,7 @@
     <main class="container">
         <section class="card">
             <h1 class="policy-page-title">Our Policies</h1>
-            
+
             <div class="policies-grid">
                 <!-- Privacy Policy -->
                 <div class="policy-card">
@@ -46,7 +53,7 @@
                         <span>Download PDF</span>
                     </a>
                 </div>
-                
+
                 <!-- Terms of Service -->
                 <div class="policy-card">
                     <div class="policy-icon">
@@ -59,7 +66,7 @@
                         <span>Download PDF</span>
                     </a>
                 </div>
-                
+
                 <!-- Influencer Agreement -->
                 <div class="policy-card">
                     <div class="policy-icon">
@@ -72,7 +79,7 @@
                         <span>Download PDF</span>
                     </a>
                 </div>
-                
+
                 <!-- Refund Policy -->
                 <div class="policy-card">
                     <div class="policy-icon">
@@ -85,7 +92,7 @@
                         <span>Download PDF</span>
                     </a>
                 </div>
-                
+
                 <!-- Content Usage Policy -->
                 <div class="policy-card">
                     <div class="policy-icon">
@@ -98,7 +105,7 @@
                         <span>Download PDF</span>
                     </a>
                 </div>
-                
+
                 <!-- Social Media Policy -->
                 <div class="policy-card">
                     <div class="policy-icon">
@@ -115,26 +122,28 @@
         </section>
     </main>
 
-<!-- Footer -->
-  <div id="footer-container"></div>
+    <!-- Footer -->
+    <div id="footer-container"></div>
 
-<script>
-  fetch('footer.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('footer-container').innerHTML = data;
-    })
-    .catch(() => {
-      document.getElementById('footer-container').innerHTML = `
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            })
+            .catch(() => {
+                document.getElementById('footer-container').innerHTML = `
         <footer class="footer">
           <div class="container">
             <p>© ${new Date().getFullYear()} Gamers Hub Network</p>
           </div>
         </footer>
       `;
-    });
-</script>
+            });
+    </script>
 
     <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
